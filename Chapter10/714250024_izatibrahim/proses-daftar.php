@@ -9,10 +9,10 @@ if (isset($_POST['daftar'])) {
     $alamat = $_POST['alamat'];
     $jenis_kelamin = $_POST['jenis_kelamin'];
     $agama = $_POST['agama'];
-    $sekolah_asal = $_POST['asal_sekolah'];
+    $asal_sekolah = $_POST['asal_sekolah'];
 
     //buat query
-$sql = "INSERT INTO pendaftaran (nama, alamat, jenis_kelamin, agama, asal_sekolah) VALUE ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$asal_sekolah')";
+    $sql = "INSERT INTO pendaftaram (nama, alamat, jenis_kelamin, agama, asal_sekolah) VALUE ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$asal_sekolah')";
     $query = mysqli_query($db, $sql);
 
     //apakah query simpan berhasil?
