@@ -1,8 +1,8 @@
 <?php
 include("config.php");
 
-//cek apakah tombol daftar sudak diklik atau belum?
-if (isset($_POST['daftar'])) {
+//cek apakh tombol daftar sudah diklik atau blum?
+if(isset($_POST['daftar'])){
 
     //ambil data dari formulir
     $nama = $_POST['nama'];
@@ -12,20 +12,19 @@ if (isset($_POST['daftar'])) {
     $sekolah_asal = $_POST['asal_sekolah'];
 
     //buat query
-$sql = "INSERT INTO pendaftaran (nama, alamat, jenis_kelamin, agama, asal_sekolah) VALUE ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$asal_sekolah')";
+    $sql = "INSERT INTO pendaftaran1 (nama, alamat, jenis_kelamin, agama, asal_sekolah)
+    VALUE ('$nama', '$alamat', '$jenis_kelamin', '$agama', '$sekolah_asal')";
     $query = mysqli_query($db, $sql);
 
     //apakah query simpan berhasil?
-    if ($query) {
+    if( $query ) {
         //kalau berhasil alihkan ke halaman index.php dengan status=sukses
         header('Location: index.php?status=sukses');
     } else {
         //kalau gagal alihkan ke halaman index.php dengan status=gagal
-        header('Location: index.php?status=gagal');
+        die("Location: index.php?status=gagal");
     }
-}
-
-else {
+} else {
     die("Akses dilarang...");
 }
 ?>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Mahasiswa Baru | POLTEKPOS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -37,12 +38,21 @@
                 </select>
             </p>
             <p>
-                <label for="asal_sekolah">Sekolah Asal: </label>
-                <input type="text" name="asal_sekolah" placeholder="asal sekolah" />
+                <label for="asal_sekolah">Asal Sekolah: </label>
+                <input type="text" name="asal_sekolah" placeholder="Asal Sekolah" />
             </p>
             <p>
                 <input type="submit" value="daftar" name="daftar" />
             </p>
         </fieldset>
+    </form>
+
+    <script>
+        // JS sederhana jika diperlukan
+        document.getElementById('forDaftar').onsubmit = function() {
+            return confirm('Formulir pendaftaran akan dikirim!');
+        };
+    </script>
+
 </body>
 </html>

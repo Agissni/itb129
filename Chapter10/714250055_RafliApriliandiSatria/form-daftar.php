@@ -11,11 +11,10 @@
     </header>
 
     <form action="proses-daftar.php" method="POST">
-
         <fieldset>
             <p>
-                <label for="nama">Nama Lengkap: </label>
-                <input type="text" name="nama" placeholder="Nama Lengkap" />
+                <label for="nama">Nama: </label>
+                <input type="text" name="nama" placeholder="nama lengkap" />
             </p>
             <p>
                 <label for="alamat">Alamat: </label>
@@ -23,8 +22,8 @@
             </p>
             <p>
                 <label for="jenis_kelamin">Jenis Kelamin: </label>
-                <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
-                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan</label>
             </p>
             <p>
                 <label for="agama">Agama: </label>
@@ -37,12 +36,13 @@
                 </select>
             </p>
             <p>
-                <label for="asal_sekolah">Sekolah Asal: </label>
-                <input type="text" name="asal_sekolah" placeholder="asal sekolah" />
+                <label for="sekolah_asal">Sekolah Asal: </label>
+                <input type="text" name="sekolah_asal" placeholder="nama sekolah" />
             </p>
             <p>
-                <input type="submit" value="daftar" name="daftar" />
+                <input type="submit" value="Daftar" name="daftar" />
             </p>
         </fieldset>
+    </form>
 </body>
 </html>
